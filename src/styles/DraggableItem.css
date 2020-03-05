@@ -5,7 +5,7 @@
   background-color: #ff7070;
   opacity: 0.8;
   margin: 1px;
-  flex: 1 1 auto;
+  /*flex: 1 1 auto;*/
 }
 
 .Grid > ul > li.test {
@@ -27,7 +27,6 @@
   width: calc(0.2*var(--cell-width));
   height: calc(0.2*var(--cell-height));
   border-radius: 1000px;
-  align-self: end;
 }
 
 .Grid > ul > li.halfGridHeight {
