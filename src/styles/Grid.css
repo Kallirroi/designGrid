@@ -1,0 +1,68 @@
+
+.Grid {
+  z-index: 1;
+  position: absolute;
+  width: calc(var(--factor) * var(--cell-width));
+  height: calc(var(--factor) * var(--cell-height));
+  top: 0;
+  left: 0;
+}
+
+.Grid > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Grid > ul > li {
+  position: relative;
+  border-radius: 2px;
+  cursor: grab;
+  background-color: #ff7070;
+  opacity: 0.8;
+  margin: 1px;
+  flex: 1 1 auto;
+}
+
+
+.Grid > ul > li.test {
+  width: calc(var(--cell-width));
+  height: calc(var(--cell-height));
+}
+
+.Grid > ul > li.fullWidth {
+  width: calc(3*var(--cell-width));
+  height: calc(0.2*var(--cell-height));
+}
+
+.Grid > ul > li.twothirds {
+  width: calc(2*var(--cell-width));
+  height: calc(0.2*var(--cell-height));
+}
+
+.Grid > ul > li.circle {
+  width: calc(0.2*var(--cell-width));
+  height: calc(0.2*var(--cell-height));
+  border-radius: 1000px;
+  align-self: end;
+}
+
+.Grid > ul > li.halfGridHeight {
+  width: calc(var(--cell-width));
+  height: calc(0.4*var(--cell-height));
+}
+
+.Grid > ul > li.fifthGridHeight {
+  width: calc(var(--cell-width));
+  height: calc(0.1*var(--cell-height));
+}
+
+.Grid > ul > li.fifthGridHeightTransparent {
+  width: calc(var(--cell-width));
+  height: calc(0.1*var(--cell-height));
+  background-color: transparent;
+  cursor: default;
+  /*border: 1px solid;*/
+}
