@@ -14,7 +14,7 @@
 
 const initialItems=[]
 
-for (var i = 1; i <= 3; i++) {
+for (var i = 1; i <= 1; i++) {
   initialItems.push({ id: i, className: 'test'})
 }
 

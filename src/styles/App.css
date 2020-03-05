@@ -1,7 +1,7 @@
 :root {
   --factor: 3;
-  --cell-width: 200px;
-  --cell-height: 200px;
+  --cell-width: 20vw;
+  --cell-height: 20vw;
 }
 
 * {
@@ -24,7 +24,7 @@ body {
   position: relative;
   width: calc(var(--factor) * var(--cell-width));
   height: calc(var(--factor) * var(--cell-height));
-  top: calc(1/var(--factor) *var(--cell-height));
+  top: calc(var(--cell-height)/2);
   margin:0 auto;
   border: 2px solid #00f;
   overflow: hidden;
