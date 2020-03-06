@@ -38,11 +38,3 @@
   width: calc(var(--cell-width));
   height: calc(0.1*var(--cell-height));
 }
-
-.Grid > ul > li.fifthGridHeightTransparent {
-  width: calc(var(--cell-width));
-  height: calc(0.1*var(--cell-height));
-  background-color: transparent;
-  cursor: default;
-  /*border: 1px solid;*/
-}
