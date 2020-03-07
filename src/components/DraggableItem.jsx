@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDrag, useDrop} from 'react-dnd'
+import { useDrag} from 'react-dnd'
 import {ItemTypes} from '../Utils'
 
 import '../styles/DraggableItem.css'

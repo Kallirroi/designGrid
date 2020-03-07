@@ -6,7 +6,6 @@ function emitChange() {
 }
 
 export function observe(o) {
-  console.log('called observer')
   if (observer) {
     throw new Error('Multiple observers not implemented.')
   }
@@ -16,7 +15,6 @@ export function observe(o) {
 }
 
 export function moveItem(x,y) {
-	console.log('called moveItem')
 	position=[x,y]
 	emitChange()
 }
