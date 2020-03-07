@@ -12,18 +12,18 @@ function DraggableItem(props) {
 	}
 	const [{isDragging}, connectDrag] = useDrag({
 		item: { type: ItemTypes.ITEM },
-			collect: monitor => ({
-				isDragging: !!monitor.isDragging(),
-			}),
+		// collect: monitor => ({
+		// 	isDragging: !!monitor.isDragging(),
+		// }),
 		})
 
 	const [{isOver}, connectDrop] = useDrop({
 	  accept: ItemTypes.ITEM,
 	  drop: (e) => onDrop(e),
-	  collect: monitor => ({
-			isOver: !!monitor.isOver(),
-    		canDrop: !!monitor.canDrop(),
-		}),
+	 //  collect: monitor => ({
+		// 	isOver: !!monitor.isOver(),
+  //   		canDrop: !!monitor.canDrop(),
+		// }),
 	})
 
 	connectDrag(ref);

@@ -3,38 +3,38 @@
   border-radius: 2px;
   cursor: grab;
   background-color: #ff7070;
-  opacity: 0.8;
+  opacity: 1;
   margin: 1px;
-  /*flex: 1 1 auto;*/
+  z-index: 1;
 }
 
 .Grid > .item.test {
-  width: calc(var(--cell-width));
-  height: calc(var(--cell-height));
+  width: calc(0.98*var(--cell-width));
+  height: calc(0.98*var(--cell-height));
 }
 
 .Grid >  .item.fullWidth {
-  width: calc(3*var(--cell-width));
-  height: calc(0.2*var(--cell-height));
+  width: calc(3*0.98*var(--cell-width));
+  height: calc(0.2*0.98*var(--cell-height));
 }
 
 .Grid >  .item.twothirds {
-  width: calc(2*var(--cell-width));
-  height: calc(0.2*var(--cell-height));
+  width: calc(2*0.98*var(--cell-width));
+  height: calc(0.2*0.98*var(--cell-height));
 }
 
 .Grid >  .item.circle {
-  width: calc(0.2*var(--cell-width));
-  height: calc(0.2*var(--cell-height));
+  width: calc(0.2*0.98*var(--cell-width));
+  height: calc(0.2*0.98*var(--cell-height));
   border-radius: 1000px;
 }
 
 .Grid >  .item.halfGridHeight {
-  width: calc(var(--cell-width));
-  height: calc(0.4*var(--cell-height));
+  width: calc(0.98*var(--cell-width));
+  height: calc(0.4*0.98*var(--cell-height));
 }
 
 .Grid >  .item.fifthGridHeight {
-  width: calc(var(--cell-width));
-  height: calc(0.1*var(--cell-height));
+  width: calc(0.98*var(--cell-width));
+  height: calc(0.1*0.98*var(--cell-height));
 }

@@ -3,11 +3,10 @@ import Grid from './components/Grid'
 
 import './styles/App.css';
 
-export default function App() {
-
+export default function App(props) {
   return (
     <div className="App">
-      <Grid />
+   		<Grid position={props.position}/>
     </div>
   )
 }

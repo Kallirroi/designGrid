@@ -6,12 +6,15 @@ import * as serviceWorker from './serviceWorker';
 
 import { DndProvider } from 'react-dnd'
 import Backend from 'react-dnd-html5-backend'
+import {observer} from './components/ActionObserver'
 
-ReactDOM.render(
+observer(position => 
+	ReactDOM.render(
 	<DndProvider backend={Backend}> 
-		<App/> 
+		<App position={position}/> 
 	</DndProvider>, 
-document.getElementById('root'));
+	document.getElementById('root'))
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
