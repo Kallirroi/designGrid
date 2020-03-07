@@ -1,8 +1,11 @@
-import React, {useRef} from 'react';
+import React, {useRef} from 'react'
+import {useMouse} from 'react-use'
+
 import {Items} from '../Utils'
 import DraggableItem from './DraggableItem'
 import Square from './Square'
-import {useMouse} from 'react-use';
+
+import {moveItem} from '../ActionObserver'
 
 import '../styles/Grid.css'
 
@@ -38,7 +41,7 @@ function Grid(props) {
 
 	const handleClick = () => {
   		// move the item to [elX, elY]
-  		// moveItem([elX,elY]);
+  		moveItem(elX,elY);
   	}
 
 	return (

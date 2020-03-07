@@ -6,9 +6,9 @@ import * as serviceWorker from './serviceWorker';
 
 import { DndProvider } from 'react-dnd'
 import Backend from 'react-dnd-html5-backend'
-import {observer} from './components/ActionObserver'
+import {observe} from './ActionObserver'
 
-observer(position => 
+observe(position => 
 	ReactDOM.render(
 	<DndProvider backend={Backend}> 
 		<App position={position}/> 
