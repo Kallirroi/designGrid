@@ -3,16 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-import { DndProvider } from 'react-dnd'
-import Backend from 'react-dnd-html5-backend'
 import {observe} from './ActionObserver'
 
 observe(position => 
 	ReactDOM.render(
-	<DndProvider backend={Backend}> 
-		<App position={position}/> 
-	</DndProvider>, 
+		<App position={position}/>,
 	document.getElementById('root'))
 );
 

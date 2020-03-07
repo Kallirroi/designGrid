@@ -10,30 +10,18 @@ function DraggableItem(props) {
 	const onDrop = (e) => {
 		console.log('drop')
 	}
-	const [{isDragging}, connectDrag] = useDrag({
-		item: { type: ItemTypes.ITEM },
-		// collect: monitor => ({
-		// 	isDragging: !!monitor.isDragging(),
-		// }),
-		})
-
-	const [{isOver}, connectDrop] = useDrop({
-	  accept: ItemTypes.ITEM,
-	  drop: (e) => onDrop(e),
-	 //  collect: monitor => ({
-		// 	isOver: !!monitor.isOver(),
-  //   		canDrop: !!monitor.canDrop(),
-		// }),
-	})
-
-	connectDrag(ref);
-  	connectDrop(ref);
+	const [{isDragging}, drag] = useDrag({
+	    item: { type: ItemTypes.ITEM },
+			collect: monitor => ({
+				isDragging: !!monitor.isDragging(),
+			}),
+	  })
 
   	const itemClass = `item ${props.item.className}`
 	
 	return (
 		<div 
-			ref={ref} 
+			ref={drag} 
 			style={{
 				left: props.position[0],
 				top: props.position[1],
