@@ -6,12 +6,11 @@
   height: calc(var(--factor) * var(--cell-height));
   top: 0;
   left: 0;
-}
-
-.Grid > ul {
   padding: 0;
   margin: 0;
-  list-style: none;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }

@@ -1,5 +1,5 @@
-.Grid > ul > li {
-  position: relative;
+.Grid > .item  {
+  position: absolute;
   border-radius: 2px;
   cursor: grab;
   background-color: #ff7070;
@@ -8,33 +8,33 @@
   /*flex: 1 1 auto;*/
 }
 
-.Grid > ul > li.test {
+.Grid > .item.test {
   width: calc(var(--cell-width));
   height: calc(var(--cell-height));
 }
 
-.Grid > ul > li.fullWidth {
+.Grid >  .item.fullWidth {
   width: calc(3*var(--cell-width));
   height: calc(0.2*var(--cell-height));
 }
 
-.Grid > ul > li.twothirds {
+.Grid >  .item.twothirds {
   width: calc(2*var(--cell-width));
   height: calc(0.2*var(--cell-height));
 }
 
-.Grid > ul > li.circle {
+.Grid >  .item.circle {
   width: calc(0.2*var(--cell-width));
   height: calc(0.2*var(--cell-height));
   border-radius: 1000px;
 }
 
-.Grid > ul > li.halfGridHeight {
+.Grid >  .item.halfGridHeight {
   width: calc(var(--cell-width));
   height: calc(0.4*var(--cell-height));
 }
 
-.Grid > ul > li.fifthGridHeight {
+.Grid >  .item.fifthGridHeight {
   width: calc(var(--cell-width));
   height: calc(0.1*var(--cell-height));
 }
