@@ -16,6 +16,7 @@ export function observe(o) {
 }
 
 export function moveItem(x,y) {
+  console.log(x,y)
 	position=[x,y]
 	emitChange()
 }

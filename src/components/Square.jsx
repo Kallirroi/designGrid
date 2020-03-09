@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Square(props,{children }) {
+export default function Square(props) {
 
   return (
     <div
@@ -10,7 +10,6 @@ export default function Square(props,{children }) {
         height: '100%',
       }}
     >
-      {children}
     </div>
   )
 }

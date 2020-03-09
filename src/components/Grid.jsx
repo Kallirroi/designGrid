@@ -1,7 +1,8 @@
-import React, {useRef} from 'react'
+import React from 'react'
 import {Items} from '../Utils'
 import DraggableItem from './DraggableItem'
 import Square from './Square'
+import {moveItem} from '../ActionObserver'
 
 import '../styles/Grid.css'
 
@@ -11,14 +12,14 @@ const numSquares = gridFreq*gridFreq;
 
 function renderSquare(i) {
 	return (
-	    <div key={i} style={{ flex: `0 0 ${flexPercentage}%`, zIndex: '-1'}}>
+	    <div key={i} style={{ flex: `0 0 ${flexPercentage}%` }}>
 	      <Square></Square>
 	    </div>
 	  )
 }
 
 function renderItems(i,props) {
-	return ( <DraggableItem  key={i} item={Items[i]} position={props.position} /> )
+	return ( <DraggableItem  key={i} item={Items[i]} position={props.position} OnMoveItem={moveItem} /> )
 }
 
 function Grid(props) {
