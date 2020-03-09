@@ -1,23 +1,34 @@
 import React from 'react';
-import { useDrag} from 'react-dnd'
+import { useDrag, useDrop} from 'react-dnd'
 import {ItemTypes} from '../Utils'
+import {useMouse} from 'react-use'
+
+import {moveItem} from '../ActionObserver'
 
 import '../styles/DraggableItem.css'
 
 function DraggableItem(props) {
 
 	const ref = React.createRef()
-	const onDrop = (e) => {
-		console.log('drop')
-	}
+	const {elX, elY} = useMouse(ref);
+
 	const [{isDragging}, drag] = useDrag({
-	    item: { type: ItemTypes.ITEM },
-			collect: monitor => ({
-				isDragging: !!monitor.isDragging(),
-			}),
-	  })
+   		item: { type: ItemTypes.DRAGGABLE },
+		collect: monitor => ({
+			isDragging: !!monitor.isDragging(),
+		}),
+  	})
+
+	const [, connectDrop] = useDrop({
+	    accept: "DRAGGABLE",
+	    hover: (item) => console.log("Hovering item. id: ", item.id, 'at mouse pos', elX, elY),
+	    drop: () => moveItem(elX, elY)
+	  });
 
   	const itemClass = `item ${props.item.className}`
+
+  	// connectDrag(ref);
+	connectDrop(ref);
 	
 	return (
 		<div 

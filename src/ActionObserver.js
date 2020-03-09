@@ -3,6 +3,7 @@ let observer = null
 
 function emitChange() {
   observer(position)
+  console.log('emit change')
 }
 
 export function observe(o) {

@@ -1,9 +1,7 @@
 
-.Grid {
-  z-index: 1;
+.Grid, .Items {
+  z-index: -1;
   position: absolute;
-  width: calc(var(--factor) * var(--cell-width));
-  height: calc(var(--factor) * var(--cell-height));
   top: 0;
   left: 0;
   padding: 0;
@@ -13,4 +11,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+.Items {
+  z-index: 1;
 }
