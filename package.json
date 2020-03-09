@@ -11,6 +11,7 @@
     "react-dnd-html5-backend": "^10.0.2",
     "react-dom": "^16.13.0",
     "react-drag-elements": "^0.1.2",
+    "react-draggable": "^4.2.0",
     "react-scripts": "3.4.0",
     "react-use": "^13.27.0"
   },

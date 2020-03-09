@@ -2,7 +2,6 @@ import React from 'react'
 import {Items} from '../Utils'
 import DraggableItem from './DraggableItem'
 import Square from './Square'
-import {moveItem} from '../ActionObserver'
 
 import '../styles/Grid.css'
 
@@ -19,7 +18,7 @@ function renderSquare(i) {
 }
 
 function renderItems(i,props) {
-	return ( <DraggableItem  key={i} item={Items[i]} position={props.position} OnMoveItem={moveItem} /> )
+	return ( <DraggableItem  key={i} item={Items[i]} position={props.position} /> )
 }
 
 function Grid(props) {
