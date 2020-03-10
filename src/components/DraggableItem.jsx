@@ -13,7 +13,7 @@ function DraggableItem(props) {
 				onDragEnd={props.OnMoveItem}
 				style={{ 
 					color: props.textVisible ? '#000' : '#ff7070', 
-					backgroundColor: props.textVisible ? '#fff' : '#ff7070' }}
+					backgroundColor: (props.textVisible && props.item.className !== 'circle') ? '#fff' : '#ff7070' }}
 				>
 				{props.item.className !== 'circle' ? text : ''}
 			</div>

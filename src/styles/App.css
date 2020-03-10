@@ -21,28 +21,36 @@
 body {
   margin: 0;
   padding: 0;
-  transition: opacity 200ms ease;
 }
 
 .App {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /*border: 1px solid;*/
+  margin-top: 15vh;
+  align-content: space-between;
+  justify-content: flex-start;
+}
+
+.GridWrapper {
   position: relative;
   width: calc(var(--factor) * var(--cell-width));
   height: calc(var(--factor) * var(--cell-height));
-  top: calc(var(--cell-height)*var(--factor)/10);
-  margin:0 auto;
+  padding: 0;
   border: 2px solid var(--button-color);
-  overflow: hidden;
+  margin: 2vh 0;
   border-radius: 3px;
 }
 
 .controls {
+  top: calc(1.05*var(--factor) * var(--cell-height));
   position: relative;
   display: block;
-  /*border: 1px solid;*/
   margin: 0 auto;
-  top: 10vh;
   width: calc(var(--factor) * var(--cell-width));
   text-align: center;
+  /*border: 1px solid;*/
 }
 
 button {

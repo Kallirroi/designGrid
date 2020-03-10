@@ -6,6 +6,7 @@
   z-index: 1;
   overflow: hidden;
   padding: 1px;
+  font-weight: bold;
 }
 
 .Items >  .item.fullWidth {

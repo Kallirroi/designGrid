@@ -1,0 +1,9 @@
+.Information {
+	color: #000;
+	display: block;
+	border: 1px solid;
+ 	width: calc(var(--factor) * var(--cell-width));
+  	font-size: 12px;
+	font-weight: bold;
+	margin: 2vh 2vw;
+}
