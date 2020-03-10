@@ -2,39 +2,42 @@
   position: relative;
   border-radius: 2px;
   cursor: grab;
-  background-color: #ff7070;
-  opacity: 1;
   margin: 1px;
   z-index: 1;
-}
-
-.Items > .item.test {
-  width: calc(0.98*var(--cell-width));
-  height: calc(0.98*var(--cell-height));
+  overflow: hidden;
+  padding: 1px;
 }
 
 .Items >  .item.fullWidth {
-  width: calc(3*0.98*var(--cell-width));
-  height: calc(0.2*0.98*var(--cell-height));
+  width: calc(3*0.99*var(--cell-width));
+  height: calc(0.2*0.99*var(--cell-height));
+  font-size: 26px;
+  line-height: 26px;
 }
 
 .Items >  .item.twothirds {
-  width: calc(2*0.98*var(--cell-width));
-  height: calc(0.2*0.98*var(--cell-height));
+  width: calc(2*0.99*var(--cell-width));
+  height: calc(0.2*0.99*var(--cell-height));
+  font-size: 23px;
+  line-height: 23px;
 }
 
 .Items >  .item.circle {
-  width: calc(0.2*0.98*var(--cell-width));
-  height: calc(0.2*0.98*var(--cell-height));
+  width: calc(0.2*0.99*var(--cell-width));
+  height: calc(0.2*0.99*var(--cell-height));
   border-radius: 1000px;
 }
 
 .Items >  .item.halfGridHeight {
-  width: calc(0.98*var(--cell-width));
-  height: calc(0.4*0.98*var(--cell-height));
+  width: calc(0.99*var(--cell-width));
+  height: calc(0.4*0.99*var(--cell-height));
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .Items >  .item.fifthGridHeight {
-  width: calc(0.98*var(--cell-width));
-  height: calc(0.1*0.98*var(--cell-height));
+  width: calc(0.99*var(--cell-width));
+  height: calc(0.1*0.99*var(--cell-height));
+  font-size: 14px;
+  line-height: 14px;
 }

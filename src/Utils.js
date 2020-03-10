@@ -1,5 +1,5 @@
 export const Items = [
-  { id: 1, className: 'test'}, 
+  { id: 1, className: 'fullWidth'}, 
   { id: 2, className: 'twothirds'}, 
   { id: 3, className: 'twothirds'}, 
   { id: 4, className: 'circle'}, 
@@ -11,3 +11,7 @@ export const Items = [
 export const ItemTypes = {
   DRAGGABLE: 'draggable',
 }
+
+export const gridFreq = 3;
+export const flexPercentage = 100/gridFreq;
+export const numSquares = gridFreq*gridFreq;

@@ -1,7 +1,11 @@
 :root {
   --factor: 3;
-  --cell-width: 20vw;
-  --cell-height: 20vw;
+  --cell-width: 10vw;
+  --cell-height: 10vw;
+  --gridLines-color: #000;
+  --typography-color: #000;
+  --button-color: #000;
+  --items-color: #ff7070;
 }
 
 * {
@@ -24,28 +28,37 @@ body {
   position: relative;
   width: calc(var(--factor) * var(--cell-width));
   height: calc(var(--factor) * var(--cell-height));
-  top: calc(var(--cell-height)/2);
+  top: calc(var(--cell-height)*var(--factor)/10);
   margin:0 auto;
-  border: 2px solid #00f;
+  border: 2px solid var(--button-color);
   overflow: hidden;
   border-radius: 3px;
 }
 
+.controls {
+  position: relative;
+  display: block;
+  /*border: 1px solid;*/
+  margin: 0 auto;
+  top: 10vh;
+  width: calc(var(--factor) * var(--cell-width));
+  text-align: center;
+}
 
+button {
+  font-size: 12px;
+  color: var(--button-color);
+  text-transform: uppercase;
+  padding: 3px 5.5px;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 2px solid var(--button-color);
+  line-height: 15px;
+  cursor: pointer;
+  margin: 1vh 1vw;
+}
 
-/*@media (max-width: 767px) {
-  .main {
-    top: 0;
-    height: 100vh;
-    overflow: auto;
-    overscroll-behavior: contain;
-  }
-  .main > ul {
-    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-    grid-gap: 20px;
-  }
-
-  .main > li > button {
-    font-size: 1rem;
-  }
-}*/
+button:hover {
+  color: var(--items-color);
+  border: 2px solid var(--items-color);
+}

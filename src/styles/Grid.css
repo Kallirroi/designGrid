@@ -16,3 +16,9 @@
 .Items {
   z-index: 1;
 }
+
+.Square {
+  border: 1px solid var(--gridLines-color);
+  width: 100%;
+  height: 100%;
+}
