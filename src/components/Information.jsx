@@ -1,7 +1,6 @@
 import React from 'react'
 import { Collapse } from 'antd';
 import '../styles/Information.css'
-import { CaretRightOutlined } from '@ant-design/icons';
 
 function Information() {
 	const { Panel } = Collapse;

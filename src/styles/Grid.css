@@ -1,5 +1,13 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+.GridWrapper {
+  overflow: hidden !important;
+}
+
+.GridWrapper:hover {
+  overflow: hidden !important;
+  cursor: crosshair !important;
+}
 
 .Grid, .Items {
   z-index: 0;
@@ -22,10 +30,6 @@
 
 .Items {
   z-index: 1;
-}
-
-.Items:hover {
-  cursor: crosshair !important;
 }
 
 .Square {

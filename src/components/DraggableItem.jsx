@@ -1,6 +1,5 @@
 import React from 'react'
 import Draggable from 'react-draggable'
-import {gridFreq, flexPercentage, numSquares} from '../Utils'
 
 import '../styles/DraggableItem.css'
 
