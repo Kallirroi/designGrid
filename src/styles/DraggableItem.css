@@ -7,6 +7,7 @@
   overflow: hidden;
   padding: 1px;
   font-weight: bold;
+  vertical-align: top;
 }
 
 .Items >  .item.fullWidth {
@@ -20,7 +21,7 @@
   width: calc(2*0.99*var(--cell-width));
   height: calc(0.2*0.99*var(--cell-height));
   font-size: 23px;
-  line-height: 23px;
+  line-height: 28px;
 }
 
 .Items >  .item.circle {
@@ -32,13 +33,13 @@
 .Items >  .item.halfGridHeight {
   width: calc(0.99*var(--cell-width));
   height: calc(0.4*0.99*var(--cell-height));
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .Items >  .item.fifthGridHeight {
   width: calc(0.99*var(--cell-width));
   height: calc(0.1*0.99*var(--cell-height));
-  font-size: 14px;
+  font-size: 12px;
   line-height: 14px;
 }
