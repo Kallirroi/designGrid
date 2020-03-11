@@ -1,6 +1,9 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .Items > .item  {
   position: relative;
   border-radius: 2px;
+  cursor: -webkit-grab;
   cursor: grab;
   margin: 1px;
   z-index: 1;

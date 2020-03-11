@@ -8,10 +8,6 @@ export const Items = [
   { id: 8, className: 'fifthGridHeight'}, 
 ]
 
-export const ItemTypes = {
-  DRAGGABLE: 'draggable',
-}
-
 export const gridFreq = 3;
 export const flexPercentage = 100/gridFreq;
 export const numSquares = gridFreq*gridFreq;

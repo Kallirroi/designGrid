@@ -14,27 +14,25 @@ function Information() {
 			<p> I built this interactive prototype in order to rapidly create thumbnails by arranging the compositional elements in accordance to the exercises below.</p>
 			<p> Have fun! </p>
 			<Collapse
-			    bordered={false}
 			    defaultActiveKey={['1']}
-			    expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-			    className="site-collapse-custom-collapse"
 			  >
-			    <Panel header="HORIZONTAL COMPOSITION" key="1" className="site-collapse-custom-panel">
+			    
+			    <Panel showArrow={false} header="HORIZONTAL COMPOSITION" key="1" className="site-collapse-custom-panel">
 			      <p>
 					<li>Variation 1: Long rectangle in top position</li>
 					<li>Variation 2: Long rectangle in bottom position</li>
 					<li>Variation 3: Long rectangle in interior position</li>
 				</p>
-				<hr/>			
 			    </Panel>
-			    <Panel header="HORIZONTAL/VERTICAL COMPOSITION" key="2" className="site-collapse-custom-panel">
+			    <hr/>
+			    <Panel showArrow={false} header="HORIZONTAL/VERTICAL COMPOSITION" key="2" className="site-collapse-custom-panel">
 			      <p>Coming soon </p>
 			    </Panel>
-				<hr/>			
-			    <Panel header="DIAGONAL COMPOSITION" key="3" className="site-collapse-custom-panel">
+			    <hr/>
+			    <Panel showArrow={false} header="DIAGONAL COMPOSITION" key="3" className="site-collapse-custom-panel">
 			      <p>Coming soon </p>
 			    </Panel>
-				<hr/>			
+			    <hr/>
 			  </Collapse>
 
 			<p className='credits'>Made by <a href="https://kalli-retzepi.com/" target='_blank' rel="noopener noreferrer" >Kalli</a> during her time at the <a href="https://www.recurse.com/" target='_blank' rel="noopener noreferrer">Recurse Center</a>.</p>
