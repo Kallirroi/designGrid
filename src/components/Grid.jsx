@@ -29,9 +29,9 @@ function Grid(props) {
 	}
 
 	return (
-		<div>
+		<div className='Grid'>
 			<div className='Items'> {items} </div>
-			<div className='Grid'> {squares} </div>
+			<div className='Squres'> {squares} </div>
 		</div>
     )
 }

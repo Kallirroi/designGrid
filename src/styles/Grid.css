@@ -1,15 +1,15 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-.GridWrapper {
-  overflow: hidden !important;
-}
 
-.GridWrapper:hover {
-  overflow: hidden !important;
+.Grid:hover {
   cursor: crosshair !important;
 }
 
-.Grid, .Items {
+.Squares {
+  border: 1px solid;
+}
+
+.Squares, .Items {
   z-index: 0;
   position: absolute;
   top: 0;
@@ -26,6 +26,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  overflow: hidden !important;
 }
 
 .Items {
