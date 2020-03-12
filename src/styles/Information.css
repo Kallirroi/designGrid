@@ -4,7 +4,7 @@
 	color: #000;
 	display: block;
 	/*border: 1px solid;*/
- 	width: calc(1.3*var(--factor) * var(--cell-width));
+ 	width: calc(var(--factor) * var(--cell-width));
  	height: 85vh;
   	font-size: var(--font-size);
   	line-height: var(--line-height);

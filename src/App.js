@@ -35,6 +35,13 @@ export default function App(props) {
     });
   }
 
+  function downloadURI(uri, name) {
+    var link = document.createElement("a");
+    link.download = name;
+    link.href = uri;
+    link.click();
+  }
+
   return (
     <div className='App'>
       <Information />
@@ -42,13 +49,13 @@ export default function App(props) {
 	   		<Grid position={props.position} textVisible={textVisible} />
         <div className='controls'>
           <button onClick={ () => setTextVisible( (prevState) => !prevState)}>{buttonText}</button>
-          <button onClick={saveGrid}>Export</button>
-          <button onClick={() => setPersistedData([])}>Clear</button>
+          <button onClick={saveGrid}>Save thumbnail</button>
+          <button onClick={() => setPersistedData([])}>Clear thumbnails</button>
        </div>
 	    </div>
       <div className='savedGrids'>
         {persistedData.map( (image,i) => (
-          <img key={i} src={image} width='100vw' />
+          <img key={i} src={image} width='100vw' onClick={(e) => {e.preventDefault(); downloadURI(image, `thumbnail_${i+1}.png`);}} />
           ))
         }
       </div>
