@@ -24,32 +24,33 @@ export default function App(props) {
     return [state, setState];
   }
 
-  const saveGrid = async () => {
-    const renderEl = document.getElementById('test');
+  const saveGrid = () => {
+    const renderEl = document.getElementById('grid');
 
     html2canvas(renderEl, {
       useCORS: true,
     }).then(canvas => {
-      const imgData = canvas.toDataURL('image/png');
-      console.log(imgData);
-      setPersistedData(imgData)
+      let imgData = canvas.toDataURL('image/png');
+      setPersistedData(prevState => [...prevState, imgData]);
     });
   }
-
 
   return (
     <div className='App'>
       <Information />
-	    <div className="GridWrapper" id='test'>
+	    <div className="GridWrapper" id='grid'>
 	   		<Grid position={props.position} textVisible={textVisible} />
         <div className='controls'>
-         <button onClick={ () => setTextVisible( (prevState) => !prevState)}>{buttonText}</button>
-         <button onClick={saveGrid}>Export</button>
-         <button onClick={() => setPersistedData([])}>Clear</button>
+          <button onClick={ () => setTextVisible( (prevState) => !prevState)}>{buttonText}</button>
+          <button onClick={saveGrid}>Export</button>
+          <button onClick={() => setPersistedData([])}>Clear</button>
        </div>
 	    </div>
       <div className='savedGrids'>
-          <img src={persistedData} width='100vw' />
+        {persistedData.map( (image,i) => (
+          <img key={i} src={image} width='100vw' />
+          ))
+        }
       </div>
     </div>
   )

@@ -8,8 +8,9 @@
  	height: 85vh;
   	font-size: var(--font-size);
   	line-height: var(--line-height);
-	margin: 2vh 8vw;
+	margin: 0vh 4vw;
 	overflow: scroll;
+ 	/*border: 1px solid;*/
 }
 
 h1 {

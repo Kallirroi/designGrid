@@ -43,7 +43,7 @@ body {
   /*border: 1px solid;*/
   margin-top: 10vh;
   -ms-flex-line-pack: justify;
-      align-content: space-between;
+  align-content: space-around;
   justify-content: flex-start;
 }
 
@@ -53,7 +53,6 @@ body {
   height: calc(var(--factor) * var(--cell-height));
   padding: 0;
   border: 2px solid var(--button-color);
-  margin: 2vh 0;
   border-radius: 3px;
 }
 
@@ -82,4 +81,22 @@ button {
 button:hover {
   color: var(--items-color);
   border: 2px solid var(--items-color);
+}
+
+.savedGrids {
+  border: 1px solid;
+  position: relative;
+  display: block;
+  width: 20vw;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.savedGrids > * {
+  width: 40%;
 }
