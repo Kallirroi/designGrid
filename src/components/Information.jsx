@@ -8,6 +8,7 @@ function Information() {
 		<div className='Information'>
 			<h1> Grid Systems</h1>
 			<h3> An interactive supplement to <a href="https://www.goodreads.com/book/show/350964.Grid_Systems"> a wonderful book </a> by Kimberly Elam.</h3>
+			<p>*better viewed on Chrome</p>
 			<Collapse>
 			  	<Panel showArrow={false} header="WHAT IS THIS?" key="0" className="site-collapse-custom-panel">
 			      	From the book: <em><p>A 3x3 structure is the format for exploring texture and composition. This simple grid system provides a wide range of variation for exploration within a controlled system of organization. Six rectangles are the compositional elements. A small circle is also used to provide an element for balance, visual control of the composition and contrast.</p> 
