@@ -55,7 +55,7 @@ export default function App(props) {
 	    </div>
       <div className='savedGrids'>
         {persistedData.map( (image,i) => (
-          <img key={i} src={image} width='100vw' onClick={(e) => {e.preventDefault(); downloadURI(image, `thumbnail_${i+1}.png`);}} />
+          <img key={i} src={image} alt='thumbnail' width='100vw' onClick={(e) => {e.preventDefault(); downloadURI(image, `thumbnail_${i+1}.png`);}} />
           ))
         }
       </div>

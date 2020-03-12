@@ -5,7 +5,7 @@ import '../styles/DraggableItem.css'
 
 function DraggableItem(props) {
   	const itemClass = `item ${props.item.className}`
-	const text = 'The quick brown fox jumps over the lazy dog'
+	const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio tempor orci dapibus ultrices in iaculis nunc sed augue.'
 	return (
 		<Draggable grid={[2, 2]}>
 			<div className={itemClass} 
